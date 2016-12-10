@@ -5,11 +5,12 @@
     <div class="banner-content">
         
       <h1>Search</h1><br><br><br>
+      <div class="banner-search">
       <%= form_tag(dashboard_path, method: :get) do %>
               <%= text_field_tag :search %>
               <%= submit_tag 'Search', :name => nil, class: "btn btn-info" %>
             <% end %>
-      
+      </div>
     </div>
   </div>
             
