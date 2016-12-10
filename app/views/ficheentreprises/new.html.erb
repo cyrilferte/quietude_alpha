@@ -1,0 +1,15 @@
+<h1 class="text-center">Créer votre page entreprise</h1>
+<div class="wrapper">
+    <div class=" container form-signin">
+        
+        <%= simple_form_for @ficheentreprise do |f| %>
+        <%= f.input :name, placeholder: "Name", label: "Nom de l'entreprise" %>
+        <%= f.input :tagline, placeholder: "resumer", label: "Resumer de votre entreprise" %>
+        <%= f.input :url, as: :url, label: "Lien vers votre site internet" %>
+        <%= f.input :text, as: :text, placeholder: "long resume", label: "Description" %>
+        <%= f.input :mail, placeholder: "moi@entreprise.fr", label: "email "%>
+        <%= f.input :photo, as: :attachinary %>
+        <%= f.button :submit, "creer ma fiche", class: "btn btn-primary btn-lg btn-block btn-color" %>
+  <% end %>
+  </div>
+  </div>

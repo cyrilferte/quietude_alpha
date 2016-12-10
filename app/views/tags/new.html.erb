@@ -1,0 +1,12 @@
+<div class="wrapper">
+    <div class=" container form-signin">
+<%= simple_form_for @tag do |f| %>
+      <%= f.input :name, placeholder: "Name", label: "Tag name" %>
+      <%= f.input :classe, label: "classe" %>
+      <%= f.input :url, as: :url, label: "URL" %>
+        <%= f.input :titre, placeholder: "titre", label: "titre"%>
+      <%= f.input :text, as: :text, placeholder: "long resume", label: "Description" %>
+      <%= f.button :submit, "ADD fiche", class: "btn btn-primary btn-lg btn-block btn-color" %>
+  <% end %>
+</div>
+  </div>

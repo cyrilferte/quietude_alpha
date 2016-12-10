@@ -1,0 +1,26 @@
+
+<br><br><br>
+<div class="container">
+        
+    <div class="row">
+        <div class="col-md-4">
+        <% if @ficheentreprise.photo? %>
+            <%= cl_image_tag(@ficheentreprise.photo.path, height: 117, width: 175, crop: :fill, class: 'product-image') %><br>
+        <% else %>
+            <%= image_tag("logo.png", height: 117, width: 175, crop: :fill, class: 'product-image') %><br>
+        <% end %>
+          <%= link_to @ficheentreprise.url %>
+        </div>
+        <div class="col-md-8">
+        <h1><%= @ficheentreprise.name %></h1>
+        <h2><%= @ficheentreprise.tagline %></h2>
+        <p><%= @ficheentreprise.text %></p>
+        </div>
+    </div>
+        
+        
+        
+        
+        
+        
+</div>

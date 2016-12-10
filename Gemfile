@@ -16,6 +16,12 @@ gem 'font-awesome-sass'
 gem 'simple_form'
 gem 'autoprefixer-rails'
 
+gem 'devise', '4.0.0.rc2'
+gem "attachinary"
+gem "jquery-fileupload-rails"
+gem "coffee-rails"
+gem 'cloudinary'
+
 group :development, :test do
   gem 'binding_of_caller'
   gem 'better_errors'

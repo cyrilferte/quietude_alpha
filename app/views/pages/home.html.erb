@@ -1,2 +1,20 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+
+
+
+            <div class="banner_signin" >
+    <div class="banner-content">
+        
+      <h1>Search</h1><br><br><br>
+      <%= form_tag(dashboard_path, method: :get) do %>
+              <%= text_field_tag :search %>
+              <%= submit_tag 'Search', :name => nil, class: "btn btn-info" %>
+            <% end %>
+      
+    </div>
+  </div>
+            
+
+           
+   </div>
+   
+   <%= render "shared/banner" %>

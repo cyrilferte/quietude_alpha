@@ -1,0 +1,15 @@
+<div class="container">
+<br>
+<% @ficheentreprises.each do |ent| %>
+   <div class="product">
+        <div class='product-body'>
+            <h3 class="ttext"> <%= ent.name %></h3>
+                 <p class="ttext"><%= ent.tagline %></p>
+                 <%= link_to ficheentreprises_path(ent.id) do %>
+                <i class="fa fa-eye"></i>
+              <% end %>
+              </div>
+</div>
+<% end %>
+
+</div>

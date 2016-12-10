@@ -7,10 +7,15 @@
     <title>TODO</title>
     <%= csrf_meta_tags %>
     <%= action_cable_meta_tag %>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
     <%= stylesheet_link_tag    'application', media: 'all' %>
   </head>
   <body>
+     <%= render "shared/navbar" %>
     <%= yield %>
     <%= javascript_include_tag 'application' %>
+    <%= cloudinary_js_config %>
+    <script type="text/javascript">$crisp=[];CRISP_WEBSITE_ID="054cac75-c58f-4689-9209-4b32154297a2";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.im/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
   </body>
 </html>
