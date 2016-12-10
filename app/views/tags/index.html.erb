@@ -1,10 +1,15 @@
 index tag 
 <div class="container">
-    <%= form_tag(tags_path, method: :get) do %>
-  <%= text_field_tag :search, params[:search] %>
-  <%= submit_tag 'Search', :name => nil %>
+<br>
+<% @tags.each do |tag| %>
+   <div class="product">
+        <div class='product-body'>
+            <h3 class="ttext"> <%= tag.name %></h3>
+                 <p class="ttext"><%= tag.text %></p>
+                 
+              
+        </div>
+    </div>
 <% end %>
-<%= @tag.name %>
-<%=params[:search]  %>
-<%= Tag.find_by_name(params[:search]).url %>
+
 </div>
